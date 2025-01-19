@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: "Noto Sans JP", serif;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+p{
+  margin: 0;
+}
+
+h1{
+  font-size: 34px;
+  border: 2px solid #000000;
+}
+
+
+/* header */
+
+.header-inner{
+  display: flex;
+  justify-content: center;
+}
+
+.menu{
+  font-size: 34px;
+  display: flex;
+}
+
+.menu > li{
+  list-style: none;
+  padding: 0 10px 0 10px;
+}
+.menu > li > a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.name{
+  font-size: 24px;
+}
+/* main */
+.mainpng{
+  width: 100%;
+  margin: 0 auto
+}
+
+/* about */
+h2{
+  font-size: 34px;
+  text-align: center;
+}
+.about-inner{
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 960px;
+}
+
+.aboutpng{
+  width: 60%;
+  border-radius: 50%;
+  
+}
+.about-content{
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.name{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+li{
+  font-size: 18px;
+}
+
+/* works */
+.works-inner{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.works-content{
+  margin: 0 10px;
+  padding:0 0 20px 0;
+  width: 30%;
+}
+
+.works-content > p{
+  margin-top: 20px;
+}
+
+/* fotter */
+#copyright{
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width:767px) {
+  .about-inner{
+    flex-wrap: wrap;
+  }
+  .aboutpng{
+    width: 100%;
+  }
+
+  .works-inner{
+    flex-wrap: wrap;
+  }
+  .works-content{
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+  }
+}
