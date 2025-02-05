@@ -25,12 +25,18 @@ h1{
 
 .header-inner{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 230px;
+  padding: 32px 16px 32px 16px;
 }
 
+h1 > a{
+  color: #000000;
+  text-decoration: none;
+}
 .menu{
-  font-size: 34px;
   display: flex;
+
 }
 
 .menu > li{
@@ -39,6 +45,7 @@ h1{
 }
 .menu > li > a {
   color: #000000;
+  font-size: 34px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -62,11 +69,11 @@ h2{
   align-items: center;
   margin: 20px auto;
   padding: 10px;
-  max-width: 960px;
+  max-width: 820px;
 }
 
 .aboutpng{
-  width: 60%;
+  width: 284px;
   border-radius: 50%;
   
 }
@@ -86,6 +93,7 @@ li{
 /* works */
 .works-inner{
   display: flex;
+  width: 752px;
   justify-content: center;
   margin: 0 auto;
 }
@@ -93,7 +101,10 @@ li{
 .works-content{
   margin: 0 10px;
   padding:0 0 20px 0;
-  width: 30%;
+  width: 240px;
+}
+.works-content > img{
+  width: 240px;
 }
 
 .works-content > p{
@@ -108,19 +119,29 @@ li{
 }
 
 @media (max-width:767px) {
+  .header-inner{
+    margin: auto;
+  }
+
   .about-inner{
     flex-wrap: wrap;
   }
   .aboutpng{
     width: 100%;
   }
-
+  .about-content > ul{
+    width: 296px;
+  }
   .works-inner{
     flex-wrap: wrap;
+    width: 100%;
   }
   .works-content{
-    width: 100%;
+    width:355px;
     text-align: center;
     margin: 20px;
+  }
+  .works-content > img{
+    width: 355px;
   }
 }
